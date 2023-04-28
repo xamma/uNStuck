@@ -16,6 +16,17 @@ If you need to run the **kubectl** command with sudo rights (e.g. if you have a 
 
 ```./unstuck-ns.sh --use_sudo```  
 
+### Creating Alias
+If you need to use this often, you can create an alias like **u-ns**.  
+1. Clone repo, ```sudo chmod +x``` the script (if not done already). 
+2. Move it ```sudo mv unstuck-ns.sh /usr/local/bin/unstuck-ns.sh ```. 
+3. In your .bashrc add:
+```
+# add custom script for unstucking NS
+alias u-ns="/usr/local/bin/unstuck-ns.sh"
+```
+4. ```source ~/.bashrc``` to reload settings.
+
 ### Credits
 The script is based on the following snippet
 ```
